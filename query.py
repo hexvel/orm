@@ -104,9 +104,3 @@ class Query:
 
     def __str__(self):
         return ''.join(self._lines())
-
-
-if __name__ == '__main__':
-    q = Query()
-    q = q.Select('*').From('table', 'другая_table').Where(id=1)
-    print(q)
